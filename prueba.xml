@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<pisosArtesanales>
+    <piso nombre="nombrePiso">
+        <R> valorEnteroPositivoMayorOIgualQueUno </R>
+        <C> valorEnteroPositivoMayorOIgualQueUno </C>
+        <F> valorEnteroPositivoMayorOIgualQueUno </F>
+        <S> valorEnteroPositivoMayorOIgualQueUno </S>
+        <patrones>
+            <patron codigo="codigoPatron">
+                RxC_Letras_WparaBlanco_BparaNegro
+            </patron>
+
+        </patrones>
+    </piso>
+
+</pisosArtesanales>
