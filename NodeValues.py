@@ -1,24 +1,24 @@
 class values:
-    def __init__(self, R, C, F, S):
+    def __init__(self, R):#, C, F, S):
         self.R = R #row
-        self.C = C #column
+        '''self.C = C #column
         self.f = f #cost
-        self.s = s
-        self.nextV = None
-        self.beforeV = None
+        self.s = s'''
+        self.next = None
+        self.before = None
 
 
 
-    def getRow(self):
+    def getNext(self):
         return self.nextV
 
-    def setRow(self, piso):
-        self.nextV= piso
+    def setNext(self, piso):
+        self.next= piso
 
-    def getRow(self):
+    def getBefore(self):
         return self.beforeV
 
-    def setRow(self, piso):
-        self.beforeV= piso
+    def setBefore(self, piso):
+        self.before= piso
     
     

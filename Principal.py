@@ -60,7 +60,12 @@ def xPath(ruta):
     for reviewR in root:
         nombre = reviewR.text.replace('\n', '')
         floorListt.lastInserted(reviewR.attrib['nombre'])
-        #floorListt.lastInserted(reviewR.tag['R'], int(reviewR.text))
+        R= reviewR[0]
+        print(nombre)
+        for rr in R:
+            #print('_',  rr.tag)
+            #floorListt.lastInsertedV(rr .attrib['R'])
+           print(rr.text)
         
 
 

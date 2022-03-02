@@ -15,6 +15,7 @@ class simpleList():
         else:
             self.lastt.setNext(newFloor)
             self.lastt = newFloor
+        return newFloor
 
     def promptInfo(self):
         temporary = self.firstt

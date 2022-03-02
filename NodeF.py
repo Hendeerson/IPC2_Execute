@@ -1,7 +1,9 @@
+from ListTwo import ListDT
+
 class NodeFloor:
     def __init__(self, nombre):
         self.nombre = nombre
-        
+        self.R = ListDT()
         self.next = None
         #self.pattern = PatternListed()
         #self.box = BoxesListed()
