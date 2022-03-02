@@ -1,5 +1,8 @@
 from lxml import etree as txt
 import xml.etree.ElementTree as ET
+from ListOne import simpleList
+
+floorListt = simpleList()
 
 
 def xPath(ruta):
@@ -8,9 +11,9 @@ def xPath(ruta):
     root = tree.getroot()
 
     # ET.dump(tree) #getting the xml information as it should be
-    #print(root)
+    # print(root)
+    print(root)
     print('\n')
-
 
     '''
     #print('Etiquetas colores')
@@ -27,10 +30,13 @@ def xPath(ruta):
 
 # print('\n')
 # print('Values')
+    '''
+    #verdadero
     for elements in root:
-        print(elements.tag, elements.text)
-        print(elements.text)
+        print(elements.tag, end =": ")
         print(elements.attrib['nombre'])
+        print(elements.text)
+        
         
         #patron = elements[0]
         for subelements in elements:
@@ -38,18 +44,12 @@ def xPath(ruta):
             print(subelements.text)
             #patrones = subelements[0]
             for p in subelements:
-                print('-', p.tag, p.text)
+                print('-', p.tag, end = ': ')
+                print(p.text)
+        print('\n')
+        '''
 
-    # for elements in root:
-        # print(elements.tag)
-        # print(elements.text)
-        # for subelements in elements:
-        # for sub2elemts in subelements:
-        #print(sub2elemts.tag, end="")
-        # print(sub2elemts.text)
-
-
-'''
+    '''
     for x in root.findall('.//'):
         
         print(x.tag, end=":")
@@ -57,5 +57,13 @@ def xPath(ruta):
         print(x.text, end="")
         print(x.attrib)'''
 
+    for reviewR in root:
+        nombre = reviewR.text.replace('\n', '')
+        floorListt.lastInserted(reviewR.attrib['nombre'])
+        #floorListt.lastInserted(reviewR.tag['R'], int(reviewR.text))
+        
+
 
 xPath('P.xml')
+floorListt.promptInfo()
+
