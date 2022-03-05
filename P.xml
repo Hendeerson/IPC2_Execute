@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <pisosArtesanales>
     <piso nombre="ejemplo01">
         <R> 2 </R>
@@ -19,7 +18,7 @@
             <patron codigo="cod21">WBBBWBWWW</patron>
             <patron codigo="cod22">WWWWBWWWB</patron>
         </patrones>
-        
+
     </piso>
     <piso nombre="ejemplo03">
         <R> 1 </R>
